@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Ecommerce Pastas Lau
+## Bienvenidos a Pastas Lau!!
+Pastas Lau estilo casero es un emprendimiento familiar donde podes encontrar las pastas más ricas de todo Tierra del Fuego. Trabajamos con materia prima de primera calidad y fomentamos el consumo de las especialidades que nos da nuestra querida isla como la trucha (salmonada) y la centolla
+## Proyecto 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![gif]
 
-## Available Scripts
 
-In the project directory, you can run:
+## Herramientas usadas
+* "bootstrap": "^5.1.3",
+* "firebase": "^9.8.4",
+* "formik": "^2.2.9",
+* "react": "^18.1.0",
+* "react-animated-css": "^1.2.1",
+* "react-bootstrap": "^2.4.0",
+* "react-dom": "^18.1.0",
+* "react-icons": "^4.4.0",
+* "react-router-dom": "^6.3.0",
+* "react-scripts": "5.0.1",
+* "sweetalert": "^2.1.2",
+* "web-vitals": "^2.1.4"
+* 
+## Componentes
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- NavBar: Permite realizar el routeo hacia el carrito/cantidad de productos agregados al carrito o las categorias de los productos
+- ItemDetailContainer: Muestra el detalle del producto donde tiene el ItemCount el cual permite agregar productos al carrito y llevar al archivo Carrito
+- ItemListContainer: Muestra todos los productos, el cual incluye el boton con routeo a ItemDetail
+- firebase: Base de datos con arrays y objetos desde la que se importa la info en ItemListContainer, ItemDetailContainer y Carrito
+- Carrito: Incluye todos los productos agregados al carrito, junto con su imagen, valor unitario, cantidad, nombre, cruz para eliminar productos, valor total del carrito, boton con vaciar del carrito y boton para finalizar la compra
+- Context: Aplica toda la logica del carrito para sumar productos, remover productos, limpiar el carrito, sumas productos al carrito junto con las sumas de valores del precio total
+- Footer: Redes sociales e informacion de copyright
+## Instalación
+1. Clonar Repositorio
+```
+> git clone https://github.com/lucasale92/Proyecto-Final-React
+```
+2. Instalacion
+```
+> npm install
+```
+3. Posicionarse
+```
+> cd app
+```
+4.Iniciar
+```
+> npm start
+```
+## Contacto: 
+* Lucas Alejandro Riveros
+* Linkedin: https://www.linkedin.com/in/lucas-riveros-861036180/
+* E-mail: riveros.lucas07@gmail.com
+* Teléfono: +54 2964409819
