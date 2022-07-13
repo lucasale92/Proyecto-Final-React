@@ -1,0 +1,542 @@
+/* ////////////////////////Estilos generales de App////////////////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  color: white;
+  background-color: #015a08
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.boton {
+  background-color: #df0f0fa4;
+  border-radius: 8px;
+  border-style:dashed;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 30px;
+  padding: 15px 18px;
+  text-align: center;
+  margin: 5px;
+  transition-timing-function: ease-in-out;
+
+}
+.boton:hover {
+  background-color: #015a08;
+  color: #FFFFFF;
+}
+
+/* ////////////////////////Estilos de navBar////////////////////////////// */
+.bg-nav {
+  background-color: #d70101;  
+}
+.App-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 75%;
+}
+.App-cart-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+  margin-left: -5px;
+  color: white;
+  background-color: #015a08;
+}
+.App-cart-icon:hover {
+  background-color: rgb(14, 1, 1);
+}
+.cartSize{
+  width: 30px;
+  height: 30px;
+}
+
+/* ////////////////////////Estilos de navBar////////////////////////////// */
+
+.itemLista{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+.detail-nombre{
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.detail-precio{
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+/* ////////////////////////////Estilos de ILC////////////////////////////////////////////// */
+.containerList {
+  margin: 20px 0 100px 0;
+}
+/* ////////////////////////////Estilos de IDC////////////////////////////////////////////// */
+@media screen and (max-width: 768px) {
+  .itemCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+      margin: 0 20px 80px 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .itemCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 60%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* ////////////////////////////Estilos de Cards////////////////////////////////////////////// */
+.card {
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+  margin: 5px;
+}
+.line {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-decoration: underline;
+  font-size: bold;
+}
+.smallTxt {
+font-size: 15px; 
+font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+font-weight: bold;
+}
+.imagen{
+  width: 100%;
+  height: 100 vh;
+  padding-top: 5px;
+  padding-bottom: 15px;  
+}
+.imagen:hover{
+  transform: scale(1.1);
+  border-radius: 15%;
+}
+
+/* //////////////////////////Estilos de cart/////////////////////////// */
+@media screen and (max-width: 768px) {
+  .cart-item-img, .header-image {
+    display: none;
+  }    
+}
+.empty-cart {
+    padding: 20px;
+}
+.cart-item {
+    width: 80%;
+}
+.cart-item-img, .cart-item-qty, .cart-item-price, .cart-item-remove, .cart-item-total {
+    width: 10%;
+    text-align: center;
+}
+.cart-item-img img {
+    max-width: 70px;
+    max-height: 70px;
+}
+.cart-item-title {
+    width: 50%;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+thead {
+    text-align: center;
+}
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, Arial, sans-serif;
+}
+.title {
+    font-family: Montserrat, Arial, sans-serif;
+    color: #df0f0fa4;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 3 rem;
+}
+.cart-footer {
+    margin-top: 30px;
+    text-align: center;
+}
+/* //////////////////////////Estilos de itemCount/////////////////////////// */
+
+.box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.bnt p{
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    font-size: 22px;
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+  
+}
+
+.item-count{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 3 rem;
+  color: #1b1b1b;
+  border-radius: 15%;
+}
+
+/* //////////////////////////Estilos de itemDetail/////////////////////////// */
+
+@media screen and (max-width: 768px) {
+  .item-detail-contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 15%;
+   
+  }
+  .item-detail-info {
+      text-align: center;
+      margin: 0 -15% 0 15%;
+      border-radius: 15%;
+  }
+  .item-detail-featured-img {
+      border: 10px solid #fff;  
+      height: 300px;
+      width: 300px;
+      margin: 20px;
+      overflow: hidden;
+      border-radius: 15px;
+      
+ 
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .item-detail-contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-radius: 15%;
+  }
+  .item-detail-img {
+      cursor: pointer;    
+      border-radius: 15%;
+      scale: 1.1;
+     
+  }
+
+  .item-detail-featured-img {
+      border-radius: 10px solid #fff;  
+      height: 400px;
+      width: 400px;
+      margin: 20px;
+      overflow: hidden;
+ 
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  padding-left: 5px;
+  border: #1b1b1b solid 5px;
+  border-radius: 10px;
+  color: #d70101;
+  background-image: url(https://i.imgur.com/wb8mhyB.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 7px 2px 7px  white;
+  
+  
+}
+.item-detail-info p {
+  font-size: 14px;
+  color: white;
+  padding-right: 1%;
+  color:  #fff;
+  background-color: #015a08;
+}
+
+/* ////////////////////////Estilos de CheckOut////////////////////////////// */
+.checkout {
+  margin: 10% 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor {
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.formulario {
+	min-width: 600px;
+	margin-top: 50px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.formulario > div {
+	margin-bottom: 20px;
+}
+
+.formulario label {
+	display: block;
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #1f1f1f;
+}
+
+.formulario input,
+.formulario textarea {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #e2e2e2;
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: 5px;
+	color: #1f1f1f;
+}
+
+.formulario input:focus {
+	outline: none;
+	border: 2px solid #0085FF;
+}
+
+.formulario button[type="submit"] {
+	display: block;
+	background: #0085FF;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	transition: .3s ease all;
+}
+
+.sentOrder {
+  margin-bottom: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: solid 1px black;
+}
+
+.order {
+  background: #02a802;
+  color: black;
+}
+
+/* /////////////////////////Estilos de Contacto////////////////////////////// */
+
+.contacto{
+  text-align: center;
+}
+.contacto .contacto-acerca h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fd974f;
+}
+
+.contacto .contacto-acerca p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+  color: #888;
+}
+
+.contacto .social-links {
+  padding-bottom: 20px;
+}
+
+.contacto .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: #015a08;
+  color: #f2f9f8;
+  line-height: 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #c60000;
+}
+
+.contacto .social-links a:hover {
+  background: #c60000;
+  color: #f2f9f8;
+}
+
+.contacto .info {
+  color: #777;
+}
+
+.icons{
+  font-size: 32px;
+  color: #000000fa;
+  float: left;
+  line-height: 1;
+}
+.iconsWhat{
+  font-size: 32px;
+  color: #000000fa;
+  float: center;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .iconsWhat {
+    font-size: 22px;
+    color: #000000fa;
+    float: left;
+    line-height: 1;
+  }
+  }
+.contacto .info p {
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.mapa {
+  padding: 0;
+  margin-bottom: -10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 380px;
+}
+
+/* /////////////////////////////////Estilos del footer////////////////////////////// */
+.footer {
+  background: #015a08;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.linea {
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: 1px solid #df0f0fa4;
+  padding-bottom: .8rem;
+}
+
+.footer-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.text-footer {
+  color: rgba(255, 255, 255, .5);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.App-logo-margin{
+  margin: 0 100px ;
+}
+@media (max-width: 576px) {
+  .text-footer {
+      font-size: 12.6px !important;
+  }
+}
