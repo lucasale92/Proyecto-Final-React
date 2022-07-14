@@ -2,7 +2,7 @@ import React from "react";
 import ItemCount from "./ItemCount";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+
 import { CartContext } from "../context/CartContext";
 import swal from 'sweetalert';
 
@@ -27,9 +27,9 @@ export default function ItemDetail  ({ detail,  id })  {
 
   const agregar = (count) => {
     if (count === 1) {
-      swal(`Se agregó ${name} al carrito`);
+      swal("Felidades", `Se agregó 1 ${name} al carrito`, "success");
     } else {	
-      swal(`Se agregaron ${count} ${name} al carrito.`);
+      swal("Felidades", `Se agregaron ${count} ${name} al carrito.`, "success");
     }
     setCant(count);
     addToCart(detail, count, id);
