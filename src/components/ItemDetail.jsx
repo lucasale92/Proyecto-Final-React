@@ -29,7 +29,7 @@ export default function ItemDetail  ({ detail,  id })  {
     if (count === 1) {
       swal("Felidades", `Se agregó 1 ${name} al carrito`, "success");
     } else {	
-      swal("Felidades", `Se agregaron ${count} ${name} al carrito.`, "success");
+      swal("Felicidades", `Se agregaron ${count} ${name} al carrito.`, "success");
     }
     setCant(count);
     addToCart(detail, count, id);
