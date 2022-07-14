@@ -38,7 +38,7 @@ export default function Cart() {
           cart.map(item => (              
             <tr className="cart-item" key={item.id}>
               <td className="cart-item-img">
-                <img src={item.img} alt={item.name} width={250} />
+                <img src={item.img} alt={item.name} width={200} />
               </td>
               <td className="cart-item-title">
                 {item.name}
