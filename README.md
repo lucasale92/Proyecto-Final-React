@@ -3,7 +3,7 @@
 Pastas Lau estilo casero es un emprendimiento familiar donde podes encontrar las pastas más ricas de todo Tierra del Fuego. Trabajamos con materia prima de primera calidad y fomentamos el consumo de las especialidades que nos da nuestra querida isla como la trucha (salmonada) y la centolla
 ## Proyecto 
 
-![gif]
+https://github.com/lucasale92/Proyecto-Final-React/blob/main/public/readme/pastas-gif.gif
 
 
 ## Herramientas usadas
