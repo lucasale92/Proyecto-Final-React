@@ -1,14 +1,16 @@
 import React from "react";
+import { Animated } from "react-animated-css";
 import Item from "./Item";
-import {Animated} from "react-animated-css";
 
-const ItemList = ({ productos  }) => {
+const ItemList = ({ productos }) => {
   return (
     <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-    <div className="itemLista">
-{productos.map(producto => <Item key={producto.id} producto={producto} />)}      
-</div>
-    </Animated>    
+      <div className="itemLista">
+        {productos.map((producto) => (
+          <Item key={producto.id} producto={producto} />
+        ))}
+      </div>
+    </Animated>
   );
 };
 export default ItemList;

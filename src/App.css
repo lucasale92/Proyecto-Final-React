@@ -315,6 +315,7 @@ thead {
 }
 
 /* ////////////////////////Estilos de CheckOut////////////////////////////// */
+
 .checkout {
   margin: 10% 20px 20px;
   display: flex;
@@ -322,22 +323,21 @@ thead {
   align-items: center;
   justify-content: center;
 }
-.contenedor {
-	min-height: 100vh;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-}
-
 .formulario {
-	min-width: 600px;
-	margin-top: 50px;
-	background: #fff;
-	border-radius: 5px;
-	padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 600px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .formulario {
+    min-width: 350px;
+  }
+  }
 .formulario > div {
 	margin-bottom: 20px;
 }
@@ -355,7 +355,7 @@ thead {
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	border-radius: 5px;
-	border: 2px solid #e2e2e2;
+	border: 3px solid #0a0808;
 	font-size: 18px;
 	padding: 10px;
 	margin-bottom: 5px;
@@ -381,11 +381,7 @@ thead {
 	font-size: 16px;
 	transition: .3s ease all;
 }
-
 .sentOrder {
-  margin-bottom: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
